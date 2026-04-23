@@ -14,7 +14,7 @@ A diferencia de otros métodos como trapecios o Simpson, la cuadratura gaussiana
 
 ## Cuadratura de Gauss-Legendre
 
-En este trabajo se utiliza la cuadratura gaussiana basada en los **polinomios de Legendre**, los cuales están definidos en el intervalo \([-1,1]\).
+En este trabajo se utiliza la cuadratura gaussiana basada en los **polinomios de Legendre**, que son ortogonales y se definen en el intervalo \([-1,1]\).
 
 La aproximación general es:
 
@@ -36,30 +36,14 @@ Este método tiene la propiedad de integrar exactamente polinomios de grado hast
 
 Dado que la integral a resolver está definida en el intervalo \([0,\pi]\), es necesario transformar el intervalo \([-1,1]\) al intervalo general \([a,b]\).
 
-Se utiliza el cambio de variable:
+Es por esto que se necesita una fórmula para adaptar el intervalo.
 
-\[
-x' = \frac{b-a}{2}x + \frac{b+a}{2}
-\]
-
-y el diferencial se transforma como:
-
-\[
-dx' = \frac{b-a}{2}dx
-\]
-
-Por lo tanto, la integral original se reescribe como:
-
-\[
-\int_a^b f(x')\,dx' = \frac{b-a}{2} \int_{-1}^{1} f\left(\frac{b-a}{2}x + \frac{b+a}{2}\right)\,dx
-\]
+def gaussxwab(a, b, x, w):
+    return 0.5 * (b - a) * x + 0.5 * (b + a), 0.5 * (b - a) * w
 
 ---
 
-## Aproximación final
-
-Aplicando la cuadratura gaussiana, se obtiene:
-
+Ya con esto, el cálculo de la integral se simplifica bastante. Específicamente adapta de forma de:
 \[
 \int_a^b f(x)\,dx \approx \sum_{k=1}^{N} w_k' f(x_k')
 \]
