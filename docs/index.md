@@ -8,7 +8,15 @@ En este proyecto se estudia la aproximación numérica de la integral:
 I = \int_0^\pi \sin{(x^2)}\, \mathrm{d}x
 \]
 
-Esta integral no tiene solución analítica, por lo que es necesario recurrir a métodos numéricos para obtener una aproximación de su valor.
+Esta integral; en términos generales, no tiene una antiderivada elemental. De forma similar a 
+\[
+I = \int e^{x^2}\, \mathrm{d}x
+\]
+
+o del mismo modo:
+\[
+\int \dfrac{1}{\ln{(x)}}\, \mathrm{d}x
+\]
 
 ---
 
@@ -33,7 +41,6 @@ donde:
 
 El objetivo de este trabajo es:
 
-- Implementar la cuadratura Gaussiana en Python
 - Evaluar la integral en el intervalo \([0,\pi]\)
 - Analizar la convergencia del método en función de \(N\)
 
