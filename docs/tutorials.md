@@ -4,7 +4,7 @@
 
 ```python
 import numpy as np
-
+from cuadrature import gaussxw, gaussxwab, funcionInt
 # gaussxw
 x, w = gaussxw(3)
 print(x)
