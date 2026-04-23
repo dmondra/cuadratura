@@ -36,10 +36,7 @@ Este método tiene la propiedad de integrar exactamente polinomios de grado hast
 
 Dado que la integral a resolver está definida en el intervalo \([0,\pi]\), es necesario transformar el intervalo \([-1,1]\) al intervalo general \([a,b]\).
 
-Es por esto que se necesita una fórmula para adaptar el intervalo.
-
-def gaussxwab(a, b, x, w):
-    return 0.5 * (b - a) * x + 0.5 * (b + a), 0.5 * (b - a) * w
+Es por esto que se necesita una fórmula para adaptar el intervalocon una fórmula que se va a ejemplificar en tutorials.md
 
 ---
 
