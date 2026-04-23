@@ -1,6 +1,6 @@
 # Tutorial de uso
 
-En esta sección se muestran ejemplos de uso de las funciones implementadas para aproximar la integral:
+En esta sección se muestran ejemplos de uso de las funciones implementadas en [cuadrature.py](cuadrature.py):
 
 \[
 \int_0^\pi \sin(x^2)\,dx
