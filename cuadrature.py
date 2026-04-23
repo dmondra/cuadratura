@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import matplotlib.pyplot as plt
 import numpy as np
-from scipy.special import legendre
 
 #encontrar pesos y puntos de colocación.
 def gaussxw(N):
