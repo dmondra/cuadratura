@@ -8,12 +8,14 @@ En este proyecto se estudia la aproximación numérica de la integral:
 I = \int_0^\pi \sin{(x^2)}\, \mathrm{d}x
 \]
 
-Esta integral; en términos generales, no tiene una antiderivada elemental. De forma similar a 
+Esta integral; en términos generales, no tiene una antiderivada elemental. De forma similar a: 
+
 \[
-I = \int e^{x^2}\, \mathrm{d}x
+I = \int e^{-x^2}\, \mathrm{d}x
 \]
 
 o del mismo modo:
+
 \[
 \int \dfrac{1}{\ln{(x)}}\, \mathrm{d}x
 \]
