@@ -1,4 +1,4 @@
-# Cuadratura Gaussiana aplicada a una integral no elemental
+# Cuadratura Gaussiana
 
 ## Introducción
 
