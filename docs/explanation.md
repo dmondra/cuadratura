@@ -1,7 +1,5 @@
 # Explicación del método
 
-## Introducción
-
 La cuadratura gaussiana es un método numérico utilizado para aproximar integrales definidas de la forma:
 
 \[
@@ -12,7 +10,7 @@ A diferencia de otros métodos como trapecios o Simpson, la cuadratura gaussiana
 
 ---
 
-## Cuadratura de Gauss-Legendre
+## Cuadratura de Gauss
 
 En este trabajo se utiliza la cuadratura gaussiana basada en los **polinomios de Legendre**, que son ortogonales y se definen en el intervalo \([-1,1]\).
 
@@ -48,8 +46,8 @@ Ya con esto, el cálculo de la integral se simplifica bastante. Específicamente
 
 donde:
 
-- \(x_k' = \frac{b-a}{2}x_k + \frac{b+a}{2}\)
-- \(w_k' = \frac{b-a}{2} w_k\)
+- \(x_k' = \dfrac{b-a}{2}x_k + \dfrac{b+a}{2}\)
+- \(w_k' = \dfrac{b-a}{2} w_k\)
 
 ---
 
@@ -67,7 +65,7 @@ En este caso:
 - \(b = \pi\)
 - \(f(x) = \sin(x^2)\)
 
-Se utilizan los puntos y pesos obtenidos mediante la función `leggauss(N)` de la librería `numpy`, los cuales corresponden a la cuadratura de Gauss-Legendre en \([-1,1]\).
+Se utilizan los puntos y pesos obtenidos mediante la función `leggauss(N)` de la librería `numpy`, los cuales corresponden a la cuadratura de Gauss en \([-1,1]\).
 
 Luego, estos valores son transformados al intervalo \([0,\pi]\) utilizando las expresiones descritas anteriormente.
 
