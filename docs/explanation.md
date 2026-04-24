@@ -82,7 +82,3 @@ En este caso, se observa que la integral converge aproximadamente a:
 \]
 
 ---
-
-## Conclusión
-
-La cuadratura gaussiana es un método altamente eficiente para la aproximación de integrales, especialmente cuando se utilizan funciones suaves. En este trabajo se comprobó que el método converge rápidamente al valor esperado al incrementar el número de puntos de colocación.
