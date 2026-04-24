@@ -41,6 +41,7 @@ Es por esto que se necesita una fórmula para adaptar el intervalocon una fórmu
 ---
 
 Ya con esto, el cálculo de la integral se simplifica bastante. Específicamente adapta de forma de:
+
 \[
 \int_a^b f(x)\,dx \approx \sum_{k=1}^{N} w_k' f(x_k')
 \]
